@@ -3927,6 +3927,19 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/scss\/_layout.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_layout.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
 	"\/scss\/_settings.scss": {
 		"aP": 1,
 		"bl": 0,
