@@ -122,7 +122,19 @@
 }
 
 .move-card-container {
+  .title {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .year-type {
+    font-size: $global-font-size * .8;
+    color: $dark-gray;
+  }
+
   .cast-and-crew {
+    font-size: $global-font-size * .8;
+
     a {
       &:after {
         content: ', ';
