@@ -77,12 +77,33 @@
 }
 
 .move-card-container {
+  $cover-width-small: 70px;
+  $cover-width-medium: 100px;
+  $cover-width-large: 140px;
+
   .cover {
-    width: 70px;
-    height: 100px;
-    margin: 0 $global-margin $global-margin 0;
+    width: $cover-width-small;
+    height: ($cover-width-small * 200 / 141);
+    margin: 0 $global-margin 0 0;
     float: left;
+    @include breakpoint(medium) {
+      width: $cover-width-medium;
+      height: ($cover-width-medium * 200 / 141);
+    }
+    @include breakpoint(large) {
+      width: $cover-width-large;
+      height: ($cover-width-large * 200 / 141);
+    }
 
     background-color: $black;
+  }
+
+  .cast-and-crew {
+    @include breakpoint(medium) {
+      margin-left: $cover-width-medium;
+    }
+    @include breakpoint(large) {
+      margin-left: $cover-width-large;
+    }
   }
 }
