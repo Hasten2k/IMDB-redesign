@@ -18,7 +18,8 @@
   }
 
   .photo-meta {
-    position: absolute;
+    position: relative;
+    width: 100%;
     @include breakpoint(medium) {
       bottom: 0;
       margin-bottom: 10px;
@@ -38,6 +39,19 @@
     $size: rem-calc(150px);
     width: $size;
     height: $size;
-    margin: -($size / 2) auto 0;
+    margin: -($size / 2) auto $global-margin;
+    @include breakpoint(medium) {
+      float: right;
+    }
+  }
+
+  .name-wrapper {
+    @include breakpoint(medium) {
+      float: left;
+    }
+  }
+
+  .user-name {
+    margin-bottom: 0;
   }
 }

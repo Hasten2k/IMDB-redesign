@@ -19,13 +19,33 @@
   .photo-meta {
     color: $white;
     font-size: $global-font-size * .6;
+    text-align: center;
+    @include breakpoint(medium) {
+      text-align: left;
+    }
   }
 }
 
-.profile-picture {
-  background-color: $black;
-  background-image: url('../img/profile@2x.jpg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 2px solid $black;
+.profile-content {
+  text-align: center;
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+
+  .profile-picture {
+    background-color: $black;
+    background-image: url('../img/profile@2x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid $black;
+  }
+
+  .user-name {
+    font-weight: bold;
+  }
+
+  .member-since {
+    font-size: $global-font-size * .8;
+    color: $dark-gray;
+  }
 }
