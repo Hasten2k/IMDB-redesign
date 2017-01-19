@@ -37,3 +37,21 @@ html
       .small-6.medium-3.columns
         h2.number 234
         p.text Forum Posts
+
+    .row
+      .small-12.columns
+        .title-bar(data-responsive-toggle="user-menu" data-hide-for="medium")
+          button.menu-icon(type="button" data-toggle="example-menu")
+          .title-bar-title User Menu
+        .menu-centered
+          ul#user-menu.vertical.medium-horizontal.menu.user-menu
+            li
+              a(href="#") Your Ratings
+            li
+              a(href="#") Your Watchlist
+            li
+              a(href="#") Your Lists
+            li
+              a(href="#") Your Reviews
+            li
+              a(href="#") Your Forum Posts
