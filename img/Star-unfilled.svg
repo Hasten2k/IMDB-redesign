@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Star-unfilled</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Star-Ratings" transform="translate(-136.000000, -1.000000)" fill="#CCCCCC">
+            <polygon id="Star-unfilled" points="144 13 139.297718 15.472136 140.195774 10.236068 136.391548 6.52786405 141.648859 5.76393202 144 1 146.351141 5.76393202 151.608452 6.52786405 147.804226 10.236068 148.702282 15.472136"></polygon>
+        </g>
+    </g>
+</svg>
