@@ -3863,6 +3863,30 @@
 		"oAP": "\/build\/css\/app.css.map",
 		"oF": 0
 		},
+	"\/img\/bg-large@2x.jpg": {
+		"ft": 16384,
+		"iS": 1423680,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-large@2x.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/bg-medium@2x.jpg": {
+		"ft": 16384,
+		"iS": 833906,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-medium@2x.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/bg-xlarge@2x.jpg": {
+		"ft": 16384,
+		"iS": 2437720,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-xlarge@2x.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/index.html": {
 		"ft": 8192,
 		"oA": 2,
@@ -3949,6 +3973,19 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/css\/_settings.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/_theme.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_theme.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
