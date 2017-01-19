@@ -78,3 +78,27 @@
     font-weight: bold;
   }
 }
+
+.title-bar {
+  &.user-menu {
+    background-color: $medium-gray;
+    color: $black;
+  }
+}
+
+.user-menu {
+  font-size: $global-font-size * .8;
+  text-transform: uppercase;
+
+  a {
+    color: $black;
+  }
+
+  .active {
+    a {
+      color: $black;
+      background-color: transparent;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}
