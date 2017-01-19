@@ -124,7 +124,6 @@
 .move-card-container {
   .title {
     font-weight: bold;
-    margin-bottom: 0;
   }
 
   .year-type {
@@ -134,12 +133,6 @@
 
   .star-vote {
     font-size: $global-font-size * .8;
-    margin: ($global-margin * .5) 0;
-
-    .stars {
-      margin-right: 5px;
-      float: left;
-    }
 
     img {
       @include breakpoint (small) {
@@ -153,7 +146,6 @@
     }
 
     .score {
-      margin-bottom: 0;
       color: $dark-gray;
     }
   }
@@ -165,7 +157,18 @@
   .cast-and-crew {
     font-size: $global-font-size * .8;
 
+    .type {
+      color: $dark-gray;
+      font-weight: bold;
+    }
+
     a {
+      color: $dark-gray;
+
+      &:hover {
+        color: $primary-color;
+      }
+
       &:after {
         content: ', ';
       }

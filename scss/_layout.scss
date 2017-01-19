@@ -98,6 +98,23 @@
     background-color: $black;
   }
 
+  .title {
+    margin-bottom: 0;
+  }
+
+  .star-vote {
+    margin: ($global-margin * .5) 0;
+
+    .stars {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .score {
+      margin-bottom: 0;
+    }
+  }
+
   .year-type {
     margin-bottom: 0;
   }
