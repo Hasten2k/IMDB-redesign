@@ -46,6 +46,13 @@
 
   .member-since {
     font-size: $global-font-size * .8;
-    color: $dark-gray;
+  }
+}
+
+.top-statistics {
+  text-align: center;
+
+  .number {
+    font-weight: bold;
   }
 }

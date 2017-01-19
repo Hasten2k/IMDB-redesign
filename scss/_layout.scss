@@ -34,6 +34,7 @@
 .profile-top-content {
   position: relative;
   overflow: visible;
+  margin-bottom: $global-margin * 2;
 
   .profile-picture {
     $size: rem-calc(150px);
@@ -52,6 +53,12 @@
   }
 
   .user-name {
+    margin-bottom: 0;
+  }
+}
+
+.top-statistics {
+  .number {
     margin-bottom: 0;
   }
 }
