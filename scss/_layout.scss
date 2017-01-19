@@ -64,3 +64,13 @@
     margin: $global-margin 0 0;
   }
 }
+
+.user-menu {
+  width: 100%;
+
+  a {
+    @include breakpoint(medium) {
+      margin-bottom: -2px; // hack to keep the bottom border of parent element aligned with border of links
+    }
+  }
+}

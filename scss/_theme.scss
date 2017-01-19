@@ -97,11 +97,12 @@
 .user-menu {
   font-size: $global-font-size * .8;
   text-transform: uppercase;
+  border-bottom: 2px solid $medium-gray;
 
   a {
     color: $black;
     @include breakpoint(medium) {
-      border-bottom: 2px solid $medium-gray;
+      border-bottom: 2px solid transparent;
     }
 
     &:hover {
