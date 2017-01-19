@@ -1,9 +1,9 @@
 .cover-photo {
-  height: 250px;
+  height: 200px;
   @include breakpoint(medium) {
-    height: 300px;
+    height: 350px;
   }
   @include breakpoint(large) {
-    height: 350px;
+    height: 500px;
   }
 }
