@@ -81,8 +81,16 @@
 
 .title-bar {
   &.user-menu {
-    background-color: $medium-gray;
+    background-color: transparent;
     color: $black;
+    border: 1px solid $medium-gray;
+  }
+
+  .menu-icon {
+    &:after {
+      background: $black;
+      box-shadow: 0 7px 0 $black, 0 14px 0 $black;
+    }
   }
 }
 
@@ -92,6 +100,15 @@
 
   a {
     color: $black;
+    @include breakpoint(medium) {
+      border-bottom: 2px solid $medium-gray;
+    }
+
+    &:hover {
+      @include breakpoint(medium) {
+        border-bottom: 2px solid $primary-color;
+      }
+    }
   }
 
   .active {
