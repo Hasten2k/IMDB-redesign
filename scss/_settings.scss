@@ -40,7 +40,6 @@
 //  35. Title Bar
 //  36. Tooltip
 //  37. Top Bar
-
 @import 'util/util';
 
 // 1. Global
@@ -49,21 +48,15 @@
 $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
-$foundation-palette: (
-  primary: #1779ba,
-  secondary: #767676,
-  success: #3adb76,
-  warning: #ffae00,
-  alert: #cc4b37,
-);
-$light-gray: #e6e6e6;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$foundation-palette: ( primary: #F5DE50, secondary: #008EB1, success: #3adb76, warning: #ffae00, alert: #cc4b37, );
+$light-gray: #f1f1f1;
+$medium-gray: #ccc;
+$dark-gray: #939393;
+$black: #333;
+$white: #fff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Verdana', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -73,19 +66,12 @@ $global-radius: 0;
 $global-text-direction: ltr;
 $global-flexbox: false;
 $print-transparent-backgrounds: true;
-
 @include add-foundation-colors;
 
 // 2. Breakpoints
 // --------------
 
-$breakpoints: (
-  small: 0,
-  medium: 640px,
-  large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
-);
+$breakpoints: ( small: 0, medium: 640px, large: 1024px, xlarge: 1200px, xxlarge: 1440px, );
 $print-breakpoint: large;
 $breakpoint-classes: (small medium large);
 
@@ -94,10 +80,7 @@ $breakpoint-classes: (small medium large);
 
 $grid-row-width: $global-width;
 $grid-column-count: 12;
-$grid-column-gutter: (
-  small: 20px,
-  medium: 30px,
-);
+$grid-column-gutter: ( small: 20px, medium: 30px, );
 $grid-column-align-edge: true;
 $block-grid-max: 8;
 
@@ -110,25 +93,8 @@ $header-font-style: normal;
 $font-family-monospace: Consolas, 'Liberation Mono', Courier, monospace;
 $header-color: inherit;
 $header-lineheight: 1.4;
-$header-margin-bottom: 0.5rem;
-$header-styles: (
-  small: (
-    'h1': ('font-size': 24),
-    'h2': ('font-size': 20),
-    'h3': ('font-size': 19),
-    'h4': ('font-size': 18),
-    'h5': ('font-size': 17),
-    'h6': ('font-size': 16),
-  ),
-  medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
-  ),
-);
+$header-margin-bottom: .5rem;
+$header-styles: ( small: ( 'h1': ('font-size': 2em), 'h2': ('font-size': 1.625em), 'h3': ('font-size': 1.375em), 'h4': ('font-size': 1.125em), 'h5': ('font-size': 17), 'h6': ('font-size': 16), ), medium: ( 'h1': ('font-size': 2.5em), 'h2': ('font-size': 2em), 'h3': ('font-size': 1.5em), 'h4': ('font-size': 1.125em), 'h5': ('font-size': 20), 'h6': ('font-size': 16), ), large: ( 'h1': ('font-size': 3em), 'h2': ('font-size': 2.25em), 'h3': ('font-size': 1.75em), 'h4': ('font-size': 1.125em), 'h5': ('font-size': 20), 'h6': ('font-size': 16), ), );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
@@ -156,7 +122,7 @@ $list-side-margin: 1.25rem;
 $list-nested-side-margin: 1.25rem;
 $defnlist-margin-bottom: 1rem;
 $defnlist-term-weight: $global-weight-bold;
-$defnlist-term-margin-bottom: 0.3rem;
+$defnlist-term-margin-bottom: .3rem;
 $blockquote-color: $dark-gray;
 $blockquote-padding: rem-calc(9 20 0 19);
 $blockquote-border: 1px solid $medium-gray;
@@ -178,8 +144,8 @@ $lead-lineheight: 1.6;
 $subheader-lineheight: 1.4;
 $subheader-color: $dark-gray;
 $subheader-font-weight: $global-weight-normal;
-$subheader-margin-top: 0.2rem;
-$subheader-margin-bottom: 0.5rem;
+$subheader-margin-top: .2rem;
+$subheader-margin-bottom: .5rem;
 $stat-font-size: 2.5rem;
 
 // 6. Abide
@@ -221,9 +187,9 @@ $badge-background: $primary-color;
 $badge-color: $white;
 $badge-color-alt: $black;
 $badge-palette: $foundation-palette;
-$badge-padding: 0.3em;
+$badge-padding: .3em;
 $badge-minwidth: 2.1em;
-$badge-font-size: 0.6rem;
+$badge-font-size: .6rem;
 
 // 10. Breadcrumbs
 // ---------------
@@ -233,14 +199,14 @@ $breadcrumbs-item-font-size: rem-calc(11);
 $breadcrumbs-item-color: $primary-color;
 $breadcrumbs-item-color-current: $black;
 $breadcrumbs-item-color-disabled: $medium-gray;
-$breadcrumbs-item-margin: 0.75rem;
+$breadcrumbs-item-margin: .75rem;
 $breadcrumbs-item-uppercase: true;
 $breadcrumbs-item-slash: true;
 
 // 11. Button
 // ----------
 
-$button-padding: 0.85em 1em;
+$button-padding: .85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary-color;
@@ -248,17 +214,12 @@ $button-background-hover: scale-color($button-background, $lightness: -15%);
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
-$button-sizes: (
-  tiny: 0.6rem,
-  small: 0.75rem,
-  default: 0.9rem,
-  large: 1.25rem,
-);
+$button-sizes: ( tiny: 0.6rem, small: 0.75rem, default: 0.9rem, large: 1.25rem, );
 $button-palette: $foundation-palette;
-$button-opacity-disabled: 0.25;
+$button-opacity-disabled: .25;
 $button-background-hover-lightness: -20%;
 $button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+$button-transition: background-color .25s ease-out, color .25s ease-out;
 
 // 12. Button Group
 // ----------------
@@ -298,18 +259,9 @@ $card-margin: $global-margin;
 // ----------------
 
 $closebutton-position: right top;
-$closebutton-offset-horizontal: (
-  small: 0.66rem,
-  medium: 1rem,
-);
-$closebutton-offset-vertical: (
-  small: 0.33em,
-  medium: 0.5rem,
-);
-$closebutton-size: (
-  small: 1.5em,
-  medium: 2em,
-);
+$closebutton-offset-horizontal: ( small: 0.66rem, medium: 1rem, );
+$closebutton-offset-vertical: ( small: 0.33em, medium: 0.5rem, );
+$closebutton-size: ( small: 1.5em, medium: 2em, );
 $closebutton-lineheight: 1;
 $closebutton-color: $dark-gray;
 $closebutton-color-hover: $black;
@@ -317,7 +269,7 @@ $closebutton-color-hover: $black;
 // 16. Drilldown
 // -------------
 
-$drilldown-transition: transform 0.15s linear;
+$drilldown-transition: transform .15s linear;
 $drilldown-arrows: true;
 $drilldown-arrow-color: $primary-color;
 $drilldown-arrow-size: 6px;
@@ -332,11 +284,7 @@ $dropdown-border: 1px solid $medium-gray;
 $dropdown-font-size: 1rem;
 $dropdown-width: 300px;
 $dropdown-radius: $global-radius;
-$dropdown-sizes: (
-  tiny: 100px,
-  small: 200px,
-  large: 400px,
-);
+$dropdown-sizes: ( tiny: 100px, small: 200px, large: 400px, );
 
 // 18. Dropdown Menu
 // -----------------
@@ -383,7 +331,7 @@ $input-border-focus: 1px solid $dark-gray;
 $input-shadow: inset 0 1px 2px rgba($black, 0.1);
 $input-shadow-focus: 0 0 5px $medium-gray;
 $input-cursor-disabled: not-allowed;
-$input-transition: box-shadow 0.5s, border-color 0.25s ease-in-out;
+$input-transition: box-shadow .5s, border-color .25s ease-in-out;
 $input-number-spinners: true;
 $input-radius: $global-radius;
 $form-button-radius: $global-radius;
@@ -395,8 +343,8 @@ $label-background: $primary-color;
 $label-color: $white;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
-$label-font-size: 0.8rem;
-$label-padding: 0.33333rem 0.5rem;
+$label-font-size: .8rem;
+$label-padding: .33333rem .5rem;
 $label-radius: $global-radius;
 
 // 21. Media Object
@@ -411,10 +359,10 @@ $mediaobject-image-width-stacked: 100%;
 
 $menu-margin: 0;
 $menu-margin-nested: 1rem;
-$menu-item-padding: 0.7rem 1rem;
+$menu-item-padding: .7rem 1rem;
 $menu-item-color-active: $white;
 $menu-item-background-active: get-color(primary);
-$menu-icon-spacing: 0.25rem;
+$menu-icon-spacing: .25rem;
 $menu-item-background-hover: $light-gray;
 $menu-border: $light-gray;
 
@@ -438,7 +386,7 @@ $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-push-zindex: 1;
 $offcanvas-overlap-zindex: 10;
 $offcanvas-reveal-zindex: 1;
-$offcanvas-transition-length: 0.5s;
+$offcanvas-transition-length: .5s;
 $offcanvas-transition-timing: ease;
 $offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0.25);
@@ -450,9 +398,9 @@ $maincontent-class: 'off-canvas-content';
 $orbit-bullet-background: $medium-gray;
 $orbit-bullet-background-active: $dark-gray;
 $orbit-bullet-diameter: 1.2rem;
-$orbit-bullet-margin: 0.1rem;
-$orbit-bullet-margin-top: 0.8rem;
-$orbit-bullet-margin-bottom: 0.8rem;
+$orbit-bullet-margin: .1rem;
+$orbit-bullet-margin-top: .8rem;
+$orbit-bullet-margin-bottom: .8rem;
 $orbit-caption-background: rgba($black, 0.5);
 $orbit-caption-padding: 1rem;
 $orbit-control-background-hover: rgba($black, 0.5);
@@ -490,10 +438,7 @@ $progress-radius: $global-radius;
 // --------------------
 
 $responsive-embed-margin-bottom: rem-calc(16);
-$responsive-embed-ratios: (
-  default: 4 by 3,
-  widescreen: 16 by 9,
-);
+$responsive-embed-ratios: ( default: 4 by 3, widescreen: 16 by 9, );
 
 // 29. Reveal
 // ----------
@@ -510,15 +455,15 @@ $reveal-overlay-background: rgba($black, 0.45);
 // 30. Slider
 // ----------
 
-$slider-width-vertical: 0.5rem;
-$slider-transition: all 0.2s ease-in-out;
-$slider-height: 0.5rem;
+$slider-width-vertical: .5rem;
+$slider-transition: all .2s ease-in-out;
+$slider-height: .5rem;
 $slider-background: $light-gray;
 $slider-fill-background: $medium-gray;
 $slider-handle-height: 1.4rem;
 $slider-handle-width: 1.4rem;
 $slider-handle-background: $primary-color;
-$slider-opacity-disabled: 0.25;
+$slider-opacity-disabled: .25;
 $slider-radius: $global-radius;
 
 // 31. Switch
@@ -533,9 +478,9 @@ $switch-height-large: 2.5rem;
 $switch-radius: $global-radius;
 $switch-margin: $global-margin;
 $switch-paddle-background: $white;
-$switch-paddle-offset: 0.25rem;
+$switch-paddle-offset: .25rem;
 $switch-paddle-radius: $global-radius;
-$switch-paddle-transition: all 0.25s ease-out;
+$switch-paddle-transition: all .25s ease-out;
 
 // 32. Table
 // ---------
@@ -590,11 +535,11 @@ $thumbnail-radius: $global-radius;
 
 $titlebar-background: $black;
 $titlebar-color: $white;
-$titlebar-padding: 0.5rem;
+$titlebar-padding: .5rem;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
-$titlebar-icon-spacing: 0.25rem;
+$titlebar-icon-spacing: .25rem;
 
 // 36. Tooltip
 // -----------
@@ -603,19 +548,18 @@ $has-tip-font-weight: $global-weight-bold;
 $has-tip-border-bottom: dotted 1px $dark-gray;
 $tooltip-background-color: $black;
 $tooltip-color: $white;
-$tooltip-padding: 0.75rem;
+$tooltip-padding: .75rem;
 $tooltip-font-size: $small-font-size;
-$tooltip-pip-width: 0.75rem;
-$tooltip-pip-height: $tooltip-pip-width * 0.866;
+$tooltip-pip-width: .75rem;
+$tooltip-pip-height: $tooltip-pip-width * .866;
 $tooltip-radius: $global-radius;
 
 // 37. Top Bar
 // -----------
 
-$topbar-padding: 0.5rem;
+$topbar-padding: .5rem;
 $topbar-background: $light-gray;
 $topbar-submenu-background: $topbar-background;
-$topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
+$topbar-title-spacing: .5rem 1rem .5rem 0;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
-
