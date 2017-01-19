@@ -67,10 +67,22 @@
 
 .user-menu {
   width: 100%;
+  margin-bottom: $global-margin * 2;
 
   a {
     @include breakpoint(medium) {
       margin-bottom: -2px; // hack to keep the bottom border of parent element aligned with border of links
     }
+  }
+}
+
+.move-card-container {
+  .cover {
+    width: 70px;
+    height: 100px;
+    margin: 0 $global-margin $global-margin 0;
+    float: left;
+
+    background-color: $black;
   }
 }
