@@ -52,6 +52,23 @@
 .top-statistics {
   text-align: center;
 
+  div {
+    &:nth-child(2),
+    &:nth-child(odd) {
+      border-right: 1px solid $medium-gray;
+      @include breakpoint(medium) {
+        border-right: 1px solid $medium-gray;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include breakpoint(small only) {
+        border-bottom: 1px solid $medium-gray;
+      }
+    }
+  }
+
   .number {
     font-weight: bold;
   }
