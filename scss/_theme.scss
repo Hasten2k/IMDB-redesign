@@ -53,9 +53,14 @@
   text-align: center;
 
   div {
-    &:nth-child(2),
     &:nth-child(odd) {
       border-right: 1px solid $medium-gray;
+      @include breakpoint(medium) {
+        border-right: 1px solid $medium-gray;
+      }
+    }
+
+    &:nth-child(2) {
       @include breakpoint(medium) {
         border-right: 1px solid $medium-gray;
       }
