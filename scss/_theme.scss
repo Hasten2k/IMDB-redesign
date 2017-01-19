@@ -13,10 +13,19 @@
 
   .overlay {
     background-color: rgba(0, 0, 0, .45);
+    border-bottom: 5px solid $primary-color;
   }
 
   .photo-meta {
     color: $white;
     font-size: $global-font-size * .6;
   }
+}
+
+.profile-picture {
+  background-color: $black;
+  background-image: url('../img/profile@2x.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid $black;
 }

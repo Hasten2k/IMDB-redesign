@@ -15,12 +15,10 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: 1;
   }
 
   .photo-meta {
     position: absolute;
-    z-index: 10;
     @include breakpoint(medium) {
       bottom: 0;
       margin-bottom: 10px;
@@ -29,5 +27,17 @@
     p {
       margin: 0;
     }
+  }
+}
+
+.profile-content {
+  position: relative;
+  overflow: visible;
+
+  .profile-picture {
+    $size: rem-calc(150px);
+    width: $size;
+    height: $size;
+    margin: -($size / 2) auto 0;
   }
 }
