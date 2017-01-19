@@ -98,12 +98,20 @@
     background-color: $black;
   }
 
+  .year-type {
+    margin-bottom: 0;
+  }
+
   .cast-and-crew {
     @include breakpoint(medium) {
-      margin-left: $cover-width-medium;
+      // margin-left: $cover-width-medium;
     }
     @include breakpoint(large) {
       margin-left: $cover-width-large;
+    }
+
+    .type {
+      margin-bottom: 0;
     }
   }
 }

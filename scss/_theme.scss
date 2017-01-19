@@ -132,6 +132,36 @@
     color: $dark-gray;
   }
 
+  .star-vote {
+    font-size: $global-font-size * .8;
+    margin: ($global-margin * .5) 0;
+
+    .stars {
+      margin-right: 5px;
+      float: left;
+    }
+
+    img {
+      @include breakpoint (small) {
+        width: 14px;
+        height: 14px;
+      }
+      @include breakpoint (medium) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .score {
+      margin-bottom: 0;
+      color: $dark-gray;
+    }
+  }
+
+  .synopsis {
+    font-size: $global-font-size * .9;
+  }
+
   .cast-and-crew {
     font-size: $global-font-size * .8;
 
