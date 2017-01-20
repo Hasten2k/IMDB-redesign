@@ -3903,6 +3903,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/bob-poster.jpg": {
+		"ft": 16384,
+		"iS": 7050,
+		"oA": 0,
+		"oAP": "\/build\/img\/bob-poster.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/breaking-bad.jpg": {
 		"ft": 16384,
 		"iS": 11066,
@@ -3911,6 +3919,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/guide-to-recognizing-your-saints-poster.jpg": {
+		"ft": 16384,
+		"iS": 11082,
+		"oA": 0,
+		"oAP": "\/build\/img\/guide-to-recognizing-your-saints-poster.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/interstellar-poster.jpg": {
 		"ft": 16384,
 		"iS": 11722,
@@ -3918,6 +3934,22 @@
 		"oAP": "\/build\/img\/interstellar-poster.jpg",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/img\/lost-in-translation-poster.jpg": {
+		"ft": 16384,
+		"iS": 17767,
+		"oA": 0,
+		"oAP": "\/build\/img\/lost-in-translation-poster.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/newsroom-poster.jpg": {
+		"ft": 16384,
+		"iS": 19446,
+		"oA": 0,
+		"oAP": "\/build\/img\/newsroom-poster.jpg",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/img\/profile@2x.jpg": {
 		"ft": 16384,
