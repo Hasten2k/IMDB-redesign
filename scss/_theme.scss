@@ -122,6 +122,13 @@
 }
 
 .move-card-container {
+  .cover {
+    background-color: transparent;
+    background-image: url('../img/breaking-bad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
   .title {
     font-weight: bold;
   }
@@ -152,32 +159,5 @@
 
   .synopsis {
     font-size: $global-font-size * .9;
-  }
-
-  .cast-and-crew {
-    font-size: $global-font-size * .8;
-
-    .type {
-      color: $dark-gray;
-      font-weight: bold;
-    }
-
-    a {
-      color: $dark-gray;
-
-      &:hover {
-        color: $primary-color;
-      }
-
-      &:after {
-        content: ', ';
-      }
-
-      &:last-child {
-        &::after {
-          content: '';
-        }
-      }
-    }
   }
 }

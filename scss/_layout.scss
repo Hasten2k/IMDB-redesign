@@ -77,25 +77,41 @@
 }
 
 .move-card-container {
-  $cover-width-small: 70px;
-  $cover-width-medium: 100px;
-  $cover-width-large: 140px;
+  $cover-width-small: rem-calc(70px);
+  $cover-width-medium: rem-calc(100px);
+  $cover-width-large: rem-calc(140px);
 
   .cover {
-    width: $cover-width-small;
-    height: ($cover-width-small * 200 / 141);
-    margin: 0 $global-margin 0 0;
-    float: left;
+    @include breakpoint(small) {
+      width: $cover-width-small;
+      height: ($cover-width-small * 200 / 141);
+      margin: 0 $global-margin 0 0;
+      float: left;
+    }
     @include breakpoint(medium) {
       width: $cover-width-medium;
       height: ($cover-width-medium * 200 / 141);
+      margin: 0;
     }
     @include breakpoint(large) {
       width: $cover-width-large;
       height: ($cover-width-large * 200 / 141);
     }
+  }
 
-    background-color: $black;
+  .wrapper {
+    @include breakpoint(small) {
+      padding: 0;
+    }
+    @include breakpoint(medium) {
+      $padding: $cover-width-medium + $global-padding;
+      padding: 0 0 0 $padding;
+    }
+    @include breakpoint(large) {
+      $padding: $cover-width-large + $global-padding;
+      padding: 0 0 0 $padding;
+    }
+
   }
 
   .title {
@@ -117,18 +133,5 @@
 
   .year-type {
     margin-bottom: 0;
-  }
-
-  .cast-and-crew {
-    @include breakpoint(medium) {
-      // margin-left: $cover-width-medium;
-    }
-    @include breakpoint(large) {
-      margin-left: $cover-width-large;
-    }
-
-    .type {
-      margin-bottom: 0;
-    }
   }
 }

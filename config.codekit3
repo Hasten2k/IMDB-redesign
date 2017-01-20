@@ -2,6 +2,22 @@
 "AAInfo": "This is a CodeKit 3 project config file. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. Doing so will cause CodeKit to crash and\/or corrupt your project. I know it looks like JSON, but it is *not*. Many numbers in this file are 64-bit long long bitFlags, which JSON does not support. These numbers *cannot* be treated as discrete values and if you attempt to parse this file as standard JSON with any public JSON parser, these values will be corrupted. This file is not backwards-compatible with CodeKit 1 or 2. For more information, see https:\/\/codekitapp.com\/",
 "buildSteps": [
 	{
+		"itemsToProcess": [
+			"\/pug\/index.pug"
+			],
+		"name": "Process Pug Files",
+		"stepType": 0,
+		"uuidString": "2C8238AD-6C9D-41E3-ADE4-6E7F44B5BC0C"
+		},
+	{
+		"itemsToProcess": [
+			"\/scss\/app.scss"
+			],
+		"name": "Process SCSS",
+		"stepType": 0,
+		"uuidString": "BF4FE5EA-B181-4244-BC25-A582BC03477D"
+		},
+	{
 		"name": "Process All Remaining Files and Folders",
 		"stepType": 1,
 		"uuidString": "8DBC17F7-ECAE-4E22-A4CD-012C28C6AB29"
@@ -3887,13 +3903,21 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/breaking-bad.jpg": {
+		"ft": 16384,
+		"iS": 11066,
+		"oA": 0,
+		"oAP": "\/build\/img\/breaking-bad.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/profile@2x.jpg": {
 		"ft": 16384,
 		"iS": 108539,
 		"oA": 0,
 		"oAP": "\/build\/img\/profile@2x.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/img\/Star-filled.svg": {
 		"ft": 2097152,
@@ -3901,7 +3925,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/Star-filled.svg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -3911,7 +3935,7 @@
 		"oA": 0,
 		"oAP": "\/build\/img\/Star-unfilled.svg",
 		"oF": 0,
-		"opt": 0,
+		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
 		},
@@ -3952,6 +3976,14 @@
 		"oF": 1,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/pug\/_mixins.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_mixins.html",
+		"oF": 0,
+		"oS": 0
 		},
 	"\/pug\/index.pug": {
 		"cOD": 1,
@@ -4040,7 +4072,8 @@
 	"creationDate": 506530986,
 	"displayValue": "IMDB Redesign",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-ive"
+	"iconImageName": "meme-ive",
+	"lastBuiltDate": 506555725
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
