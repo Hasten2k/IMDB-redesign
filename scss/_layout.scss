@@ -78,6 +78,12 @@
   }
 }
 
+.main-user-content {
+  @include breakpoint(small only) {
+    margin-top: $global-margin;
+  }
+}
+
 .move-card-container {
   $cover-width-small: rem-calc(70px);
   $cover-width-medium: rem-calc(100px);
