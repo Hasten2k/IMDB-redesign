@@ -1,4 +1,4 @@
-mixin movie-card(title, yearType)
+mixin movie-card(title, yearType, stars, synopsis, director, cast)
   .move-card-container
     .cover
     .wrapper
@@ -6,30 +6,29 @@ mixin movie-card(title, yearType)
       p.year-type= yearType
       .star-vote
         .stars
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-          img(src="img/star-filled.svg" alt="Filled Star")
-        p.score (10/10)
-      p.synopsis A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine, with his former student, in order to secure his family's financial future.
+          - var n = 0;
+          while n < stars
+            img(src="img/star-filled.svg" alt="Filled Star")
+            - n++;
+          if stars < 10
+            while n < 10
+              img(src="img/star-unfilled.svg" alt="Filled Star")
+              - n++;
+
+        p.score= "(" + stars + "/10)"
+      p.synopsis= synopsis
       .cast-and-crew
         .row.collapse
           .small-4.medium-3.large-2.columns
             p Director:
           .small-8.medium-9.large-10.columns
-            a(href="#") Vince Gilligan
+            a(href="#")= director
           .small-4.medium-3.large-2.columns
             p Starring:
           .small-8.medium-9.large-10.columns
-            a(href="#") Bryan Cranston
-            a(href="#") Aaron Paul
-            a(href="#") Anna Gunn
-            a(href="#") Betsy Brandt
+            each val in cast
+              a(href="#")= val
+            else
+              a(href="#")
 
       a.button.primary.small.add-to-watchlist + Add to Watchlist
