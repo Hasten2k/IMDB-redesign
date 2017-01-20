@@ -88,6 +88,15 @@
   $cover-width-small: rem-calc(70px);
   $cover-width-medium: rem-calc(100px);
   $cover-width-large: rem-calc(140px);
+  @include breakpoint(small) {
+    padding-bottom: $global-margin;
+    margin-bottom: $global-margin;
+  }
+  @include breakpoint(medium) {
+    padding-bottom: $global-margin * 2;
+    margin-bottom: $global-margin * 2;
+  }
+  // @include breakpoint(large){}
 
   .cover {
     @include breakpoint(small) {
