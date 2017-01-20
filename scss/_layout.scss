@@ -144,8 +144,16 @@
   }
 
   .cast-and-crew {
+    margin-bottom: $global-margin;
+
     p {
       margin-bottom: 0;
     }
+  }
+
+  .add-to-watchlist {
+    display: inline-block;
+    float: right;
+    margin: 0 auto;
   }
 }
