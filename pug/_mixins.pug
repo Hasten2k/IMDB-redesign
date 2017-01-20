@@ -1,9 +1,9 @@
-mixin movie-card
+mixin movie-card(title, year-type)
   .move-card-container
     .cover
     .wrapper
-      h4.title 1. Breaking Bad
-      p.year-type 2008 TV Series
+      h4.title= title
+      p.year-type= year-type
       .star-vote
         .stars
           img(src="img/star-filled.svg" alt="Filled Star")
