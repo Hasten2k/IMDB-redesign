@@ -97,8 +97,13 @@
 .user-menu {
   font-size: $global-font-size * .8;
   text-transform: uppercase;
+  @include breakpoint(small only) {
+    border: 1px solid $medium-gray;
+    border-top: 0;
+    padding: $global-padding / 2;
+  }
   @include breakpoint(medium) {
-    border-bottom: 2px solid $medium-gray;
+    border-bottom: 2px solid $light-gray;
   }
 
   a {
