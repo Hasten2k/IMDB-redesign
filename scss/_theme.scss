@@ -97,7 +97,9 @@
 .user-menu {
   font-size: $global-font-size * .8;
   text-transform: uppercase;
-  border-bottom: 2px solid $medium-gray;
+  @include breakpoint(medium) {
+    border-bottom: 2px solid $medium-gray;
+  }
 
   a {
     color: $black;
