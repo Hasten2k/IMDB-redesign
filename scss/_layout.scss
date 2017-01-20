@@ -85,6 +85,8 @@
 }
 
 .move-card-container {
+  position: relative;
+
   $cover-width-small: rem-calc(70px);
   $cover-width-medium: rem-calc(100px);
   $cover-width-large: rem-calc(140px);
@@ -161,8 +163,13 @@
   }
 
   .add-to-watchlist {
-    display: inline-block;
-    float: right;
+    display: block;
     margin: 0 auto;
+    @include breakpoint(medium) {
+      margin: 0 0 $global-margin;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
   }
 }
