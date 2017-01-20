@@ -67,7 +67,9 @@
 
 .user-menu {
   width: 100%;
-  margin-bottom: $global-margin * 2;
+  @include breakpoint(medium) {
+    margin-bottom: $global-margin * 2;
+  }
 
   a {
     @include breakpoint(medium) {
