@@ -1,6 +1,6 @@
-mixin movie-card(title, yearType, stars, synopsis, director, cast)
+mixin movie-card(cover, title, yearType, stars, synopsis, director, cast)
   .move-card-container
-    .cover
+    .cover(style="background-image: url('../img/" + cover + "'); ")
     .wrapper
       h4.title= title
       p.year-type= yearType
