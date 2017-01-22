@@ -97,6 +97,10 @@
   @include breakpoint(medium) {
     padding-bottom: $global-margin * 2;
     margin-bottom: $global-margin * 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   // @include breakpoint(large){}
 
