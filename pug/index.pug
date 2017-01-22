@@ -86,35 +86,39 @@ html
 
         .small-12.columns.rating-statistics
           h4 Rating Statistics
-          h5 Rating Distribution
-          .distribution-container
-            +rating-column(1, 2)
-            +rating-column(2, 4)
-            +rating-column(3, 6)
-            +rating-column(4, 22)
-            +rating-column(5, 31)
-            +rating-column(6, 52)
-            +rating-column(7, 62)
-            +rating-column(8, 43)
-            +rating-column(9, 17)
-            +rating-column(10, 2)
+          .row.collapse
+            .small-12.columns
+              h5 Rating Distribution
+              .distribution-container
+                +rating-column(1, 2)
+                +rating-column(2, 4)
+                +rating-column(3, 6)
+                +rating-column(4, 22)
+                +rating-column(5, 31)
+                +rating-column(6, 52)
+                +rating-column(7, 62)
+                +rating-column(8, 43)
+                +rating-column(9, 17)
+                +rating-column(10, 2)
 
-          h5 Number of Ratings per Year
-          .ratings-by-year
-            .year-container
-              +rating-column('', 29)
-              +rating-column('', 22)
-              +rating-column('', 17)
-              +rating-column('', 29)
-              +rating-column('', 82)
-              +rating-column('', 57)
-              +rating-column('', 43)
-              +rating-column('', 49)
-              +rating-column('', 57)
-              +rating-column('', 72)
-              +rating-column('', 62)
-            p.start-year 2005
-            p.end-year 2016
+            .small-12.columns
+              h5 Number of Ratings per Year
+              .ratings-by-year
+                .year-container
+                  +rating-column('', 29)
+                  +rating-column('', 22)
+                  +rating-column('', 17)
+                  +rating-column('', 29)
+                  +rating-column('', 82)
+                  +rating-column('', 57)
+                  +rating-column('', 43)
+                  +rating-column('', 49)
+                  +rating-column('', 57)
+                  +rating-column('', 72)
+                  +rating-column('', 62)
+                p.start-year 2005
+                p.end-year 2016
+
 
     script(src="bower_components/jquery/dist/jquery.js")
     script(src="bower_components/what-input/dist/what-input.js")
