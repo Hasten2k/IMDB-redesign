@@ -178,8 +178,12 @@
   }
 }
 
-.rating-column-container {
+.distribution-container {
+  margin-bottom: $global-lineheight + $global-margin;
   height: 100px;
+}
+
+.rating-column-container {
   width: 9%;
   float: left;
   margin-right: 1%;
