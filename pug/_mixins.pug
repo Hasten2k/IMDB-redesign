@@ -39,3 +39,11 @@ mixin rating-column(label, height)
       .rating-column(style="height: " + height + "px; margin-top: " + totalHeight + "px;")
       if label != ''
         p.rating-value= label
+
+mixin ratings-bar(ratings, genre, rating)
+  .bar
+    p.no-ratings= ratings
+    p.genre= genre
+    p.av-rating= rating
+    - var totalWidth = ratings / 362 * 100;
+    .background(style="width: "+ totalWidth + "%;")
