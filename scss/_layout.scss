@@ -192,3 +192,27 @@
     margin-right: 0;
   }
 }
+
+.ratings-by-year {
+  .start-year {
+    float: left;
+  }
+
+  .end-year {
+    float: right;
+  }
+}
+
+.year-container {
+  height: 100px;
+
+  .rating-column-container {
+    $percent: 1%;
+    width: (100 / 33 * 2) * $percent;
+    margin-right: (100 / 33) * $percent;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
