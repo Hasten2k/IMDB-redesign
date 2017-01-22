@@ -1,0 +1,6 @@
+.footer {
+  @include breakpoint(small) {
+    margin-top: $global-margin;
+    padding: $global-padding 0;
+  }
+}
