@@ -128,6 +128,12 @@
   }
 }
 
+.main-user-content {
+  @include breakpoint(medium) {
+    border-right: 1px solid $medium-gray;
+  }
+}
+
 .move-card-container {
   border-bottom: 1px solid $medium-gray;
 
