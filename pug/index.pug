@@ -76,7 +76,13 @@ html
 
       //- User Sidebar
       .small-12.medium-3.columns.user-sidebar
-        h2 Sidebar
+        .small-12.columns.quick-links
+          h4 Quick Links
+          ul
+            - var links = ["Check Ins", "Boards Profile", "Recently Viewed", "About This Page", "Export This List"]
+            each link in links
+              li
+                a(href="#")= link
 
     script(src="bower_components/jquery/dist/jquery.js")
     script(src="bower_components/what-input/dist/what-input.js")
