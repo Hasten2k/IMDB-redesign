@@ -84,6 +84,21 @@ html
               li
                 a(href="#")= link
 
+        .small-12.columns.rating-statistics
+          h4 Rating Statistics
+          h5 Rating Distribution
+          .distribution-container
+            +rating-column(1, 2)
+            +rating-column(2, 4)
+            +rating-column(3, 6)
+            +rating-column(4, 22)
+            +rating-column(5, 31)
+            +rating-column(6, 52)
+            +rating-column(7, 62)
+            +rating-column(8, 43)
+            +rating-column(9, 17)
+            +rating-column(10, 2)
+
     script(src="bower_components/jquery/dist/jquery.js")
     script(src="bower_components/what-input/dist/what-input.js")
     script(src="bower_components/foundation-sites/dist/js/foundation.js")
