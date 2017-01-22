@@ -33,8 +33,9 @@ mixin movie-card(cover, title, yearType, stars, synopsis, director, cast)
 
       a.button.primary.small.add-to-watchlist + Add to Watchlist
 
-mixin rating-column(number, height)
+mixin rating-column(label, height)
   - var totalHeight = (100 - height);
     .rating-column-container
       .rating-column(style="height: " + height + "px; margin-top: " + totalHeight + "px;")
-      p.rating-value= number
+      if label != ''
+        p.rating-value= label
