@@ -194,6 +194,9 @@
 }
 
 .ratings-by-year {
+  height: 100px;
+  margin-bottom: $global-lineheight + $global-margin;
+
   .start-year {
     float: left;
   }
@@ -204,8 +207,6 @@
 }
 
 .year-container {
-  height: 100px;
-
   .rating-column-container {
     $percent: 1%;
     width: (100 / 33 * 2) * $percent;
