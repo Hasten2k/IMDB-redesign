@@ -229,3 +229,25 @@ h5 {
     text-align: center;
   }
 }
+
+.top-20-genres {
+  font-size: $global-font-size * .8;
+
+  .heading {
+    font-weight: bold;
+  }
+
+  .av-rating {
+    text-align: right;
+  }
+
+  .bar {
+    .background {
+      background-color: $primary-color;
+    }
+
+    p {
+      line-height: 100%;
+    }
+  }
+}
