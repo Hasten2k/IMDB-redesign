@@ -1,0 +1,129 @@
+.cover-photo {
+  background-image: url('../img/bg-medium@2x.jpg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include breakpoint(medium) {
+    background-image: url('../img/bg-large@2x.jpg');
+    background-position: left;
+  }
+  @include breakpoint(large) {
+    background-image: url('../img/bg-xlarge@2x.jpg');
+  }
+
+  .overlay {
+    background-color: rgba(0, 0, 0, .45);
+    border-bottom: 5px solid $primary-color;
+  }
+
+  .photo-meta {
+    color: $white;
+    font-size: $global-font-size * .6;
+    text-align: center;
+    @include breakpoint(medium) {
+      text-align: left;
+    }
+  }
+}
+
+.profile-top-content {
+  text-align: center;
+  @include breakpoint(medium) {
+    text-align: left;
+  }
+
+  .profile-picture {
+    background-color: $black;
+    background-image: url('../img/profile@2x.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid $black;
+  }
+
+  .user-name {
+    font-weight: bold;
+  }
+
+  .member-since {
+    font-size: $global-font-size * .8;
+  }
+}
+
+.top-statistics {
+  text-align: center;
+
+  div {
+    &:nth-child(odd) {
+      border-right: 1px solid $medium-gray;
+      @include breakpoint(medium) {
+        border-right: 1px solid $medium-gray;
+      }
+    }
+
+    &:nth-child(2) {
+      @include breakpoint(medium) {
+        border-right: 1px solid $medium-gray;
+      }
+    }
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include breakpoint(small only) {
+        border-bottom: 1px solid $medium-gray;
+      }
+    }
+  }
+
+  .number {
+    font-weight: bold;
+  }
+}
+
+.title-bar {
+  &.user-menu-bar {
+    background-color: transparent;
+    color: $black;
+    border: 1px solid $medium-gray;
+  }
+
+  .menu-icon {
+    &:after {
+      background: $black;
+      box-shadow: 0 7px 0 $black, 0 14px 0 $black;
+    }
+  }
+}
+
+.user-menu {
+  font-size: $global-font-size * .8;
+  text-transform: uppercase;
+  @include breakpoint(small only) {
+    border: 1px solid $medium-gray;
+    border-top: 0;
+    padding: $global-padding / 2;
+  }
+  @include breakpoint(medium) {
+    border-bottom: 2px solid $light-gray;
+  }
+
+  a {
+    color: $black;
+    @include breakpoint(medium) {
+      border-bottom: 2px solid transparent;
+    }
+
+    &:hover {
+      @include breakpoint(medium) {
+        border-bottom: 2px solid $primary-color;
+      }
+    }
+  }
+
+  .active {
+    a {
+      color: $black;
+      background-color: transparent;
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}

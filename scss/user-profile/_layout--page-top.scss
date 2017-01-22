@@ -1,0 +1,79 @@
+.cover-photo {
+  position: relative;
+
+  height: 200px;
+  @include breakpoint(medium) {
+    height: 350px;
+  }
+  @include breakpoint(large) {
+    height: 500px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .photo-meta {
+    position: relative;
+    width: 100%;
+    @include breakpoint(medium) {
+      bottom: 0;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+}
+
+.profile-top-content {
+  position: relative;
+  overflow: visible;
+  margin-bottom: $global-margin * 2;
+
+  .profile-picture {
+    $size: rem-calc(150px);
+    width: $size;
+    height: $size;
+    margin: -($size / 2) auto $global-margin;
+    @include breakpoint(medium) {
+      float: right;
+    }
+  }
+
+  .name-wrapper {
+    @include breakpoint(medium) {
+      float: left;
+    }
+  }
+
+  .user-name {
+    margin-bottom: 0;
+  }
+}
+
+.top-statistics {
+  margin-bottom: $global-margin * 2;
+
+  .number {
+    margin: $global-margin 0 0;
+  }
+}
+
+.user-menu {
+  width: 100%;
+  @include breakpoint(medium) {
+    margin-bottom: $global-margin * 2;
+  }
+
+  a {
+    @include breakpoint(medium) {
+      margin-bottom: -2px; // hack to keep the bottom border of parent element aligned with border of links
+    }
+  }
+}

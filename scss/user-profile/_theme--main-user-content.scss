@@ -1,0 +1,75 @@
+.main-user-content {
+  @include breakpoint(medium) {
+    border-right: 1px solid $medium-gray;
+  }
+}
+
+.move-card-container {
+  border-bottom: 1px solid $medium-gray;
+
+  .cover {
+    background-color: transparent;
+    // background-image: url('../img/breaking-bad.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .title {
+    font-weight: bold;
+  }
+
+  .year-type {
+    font-size: $global-font-size * .8;
+    color: $dark-gray;
+  }
+
+  .star-vote {
+    font-size: $global-font-size * .8;
+
+    img {
+      @include breakpoint (small) {
+        width: 14px;
+        height: 14px;
+      }
+      @include breakpoint (medium) {
+        width: 16px;
+        height: 16px;
+      }
+    }
+
+    .score {
+      color: $dark-gray;
+    }
+  }
+
+  .synopsis {
+    font-size: $global-font-size * .9;
+  }
+
+  .cast-and-crew {
+    font-size: $global-font-size * .8;
+
+    p {
+      line-height: $global-lineheight;
+      font-weight: bold;
+    }
+
+    a {
+      color: $dark-gray;
+
+      &:hover {
+        color: $primary-color;
+      }
+
+      &::after {
+        content: ', ';
+      }
+
+      &:last-child {
+        &::after {
+          content: '';
+        }
+      }
+    }
+  }
+}

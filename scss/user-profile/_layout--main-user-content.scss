@@ -1,0 +1,99 @@
+.main-user-content {
+  @include breakpoint(small only) {
+    margin-top: $global-margin;
+  }
+}
+
+.move-card-container {
+  position: relative;
+
+  $cover-width-small: rem-calc(70px);
+  $cover-width-medium: rem-calc(100px);
+  $cover-width-large: rem-calc(140px);
+  @include breakpoint(small) {
+    padding-bottom: $global-margin;
+    margin-bottom: $global-margin;
+  }
+  @include breakpoint(medium) {
+    padding-bottom: $global-margin * 2;
+    margin-bottom: $global-margin * 2;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  // @include breakpoint(large){}
+
+  .cover {
+    @include breakpoint(small) {
+      width: $cover-width-small;
+      height: ($cover-width-small * 200 / 141);
+      margin: 0 $global-margin 0 0;
+      float: left;
+    }
+    @include breakpoint(medium) {
+      width: $cover-width-medium;
+      height: ($cover-width-medium * 200 / 141);
+      margin: 0;
+    }
+    @include breakpoint(large) {
+      width: $cover-width-large;
+      height: ($cover-width-large * 200 / 141);
+    }
+  }
+
+  .wrapper {
+    @include breakpoint(small) {
+      padding: 0;
+    }
+    @include breakpoint(medium) {
+      $padding: $cover-width-medium + $global-padding;
+      padding: 0 0 0 $padding;
+    }
+    @include breakpoint(large) {
+      $padding: $cover-width-large + $global-padding;
+      padding: 0 0 0 $padding;
+    }
+
+  }
+
+  .title {
+    margin-bottom: 0;
+  }
+
+  .star-vote {
+    margin: ($global-margin * .5) 0;
+
+    .stars {
+      margin-right: 5px;
+      float: left;
+    }
+
+    .score {
+      margin-bottom: 0;
+    }
+  }
+
+  .year-type {
+    margin-bottom: 0;
+  }
+
+  .cast-and-crew {
+    margin-bottom: $global-margin;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  .add-to-watchlist {
+    display: block;
+    margin: 0 auto;
+    @include breakpoint(medium) {
+      margin: 0 0 $global-margin;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}

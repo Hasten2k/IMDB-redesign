@@ -1,0 +1,82 @@
+.distribution-container {
+  margin-bottom: $global-lineheight + $global-margin;
+  height: 100px;
+}
+
+.rating-column-container {
+  width: 9%;
+  float: left;
+  margin-right: 1%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ratings-by-year {
+  height: 100px;
+  margin-bottom: $global-lineheight + $global-margin;
+
+  .start-year {
+    float: left;
+  }
+
+  .end-year {
+    float: right;
+  }
+}
+
+.year-container {
+  .rating-column-container {
+    $percent: 1%;
+    width: (100 / 33 * 2) * $percent;
+    margin-right: (100 / 33) * $percent;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.top-20-genres {
+  .heading {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  .no-ratings {
+    width: 25%;
+    float: left;
+  }
+
+  .genre {
+    width: 55%;
+    float: left;
+  }
+
+  .av-rating {
+    width: 20%;
+    float: left;
+  }
+
+  .bar {
+    margin-bottom: 4px;
+    height: 20px;
+    position: relative;
+    padding: 4px 0;
+
+    .background {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    p {
+      position: relative;
+      margin-bottom: 0;
+      z-index: 10;
+    }
+  }
+}
