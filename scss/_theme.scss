@@ -214,3 +214,15 @@
     }
   }
 }
+
+.rating-column-container {
+  height: 110px;
+
+  .rating-column {
+    background-color: $primary-color;
+  }
+
+  .rating-value {
+    text-align: center;
+  }
+}

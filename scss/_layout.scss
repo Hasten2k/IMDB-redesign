@@ -177,3 +177,13 @@
     }
   }
 }
+
+.rating-column-container {
+  width: 9%;
+  float: left;
+  margin-right: 1%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
