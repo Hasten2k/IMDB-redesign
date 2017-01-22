@@ -197,3 +197,14 @@
     }
   }
 }
+
+.quick-links {
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
