@@ -25,21 +25,7 @@
   // @include breakpoint(large){}
 
   .cover {
-    @include breakpoint(small) {
-      width: $cover-width-small;
-      height: ($cover-width-small * 200 / 141);
-      margin: 0 $global-margin 0 0;
-      float: left;
-    }
-    @include breakpoint(medium) {
-      width: $cover-width-medium;
-      height: ($cover-width-medium * 200 / 141);
-      margin: 0;
-    }
-    @include breakpoint(large) {
-      width: $cover-width-large;
-      height: ($cover-width-large * 200 / 141);
-    }
+    @include cover-image;
   }
 
   .wrapper {
