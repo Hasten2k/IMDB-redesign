@@ -4,5 +4,13 @@
   a {
     color: $dark-gray;
     text-decoration: underline;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  .manage-history {
+    font-size: $global-font-size * .8;
   }
 }
