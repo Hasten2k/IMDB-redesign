@@ -1,0 +1,63 @@
+.footer
+  .row
+    .small-12.columns.show-for-medium.recently-viewed
+      .row
+        .small-6.columns
+          h4 Recently Viewed
+        .small-6.columns
+          a.manage-history(href="#") Manage your history
+
+      .row
+        .small-12.columns
+          .cover(style="background-image: url(img/breaking-bad.jpg)")
+          .cover(style="background-image: url(img/interstellar-poster.jpg)")
+          .cover(style="background-image: url(img/bob-poster.jpg)")
+          .cover(style="background-image: url(img/newsroom-poster.jpg)")
+          .cover(style="background-image: url(img/lost-in-translation-poster.jpg)")
+          .cover(style="background-image: url(img/guide-to-recognizing-your-saints-poster.jpg)")
+
+    .small-12.medium-4.columns.apps
+      h4 IMDB Apps
+      a(src="#")
+        img(src="img/app-store@2x.png")
+      a(src="#")
+        img(src="img/google-play@2x.png")
+    .small-12.medium-4.columns.social
+      h4 Follow IMDB
+      a(href="#")
+        img(src="img/facebook.svg")
+      a(href="#")
+        img(src="img/twitter.svg")
+      a(href="#")
+        img(src="img/instagram.svg")
+    .small-12.medium-4.columns.show-for-medium.site-map
+      h4 Site Map
+      .medium-12.large-6.columns
+        - var siteMapLeft = ["Home", "Top Rated Movies", "Box Office", "In Theatres", "Coming Soon", "TV", "Search", "Site Index", "<hr>", "News", "Message Boards", "Account"]
+        ul.no-bullet
+          each item in siteMapLeft
+            if item === "<hr>"
+              li
+                <hr>
+            else
+              li
+                a(href="#")= item
+      .small-12.large-6.columns
+        - var siteMapRight = ["Contact Us", "Jobs", "Press Room", "Advertising", "<hr>", "IMDB Pro", "Box Office Mojo", "Withoutabox", "<hr>", "Conditions of Use", "Privacy Policy", "Internet-Based Apps"]
+        ul.no-bullet
+          each item in siteMapRight
+            if item === "<hr>"
+              li
+                <hr>
+            else
+              li
+                a(href="#")= item
+    .small-12.medium-12.columns.show-for-medium.legal
+      img(src="img/amazon@2x.png")
+      p.amazon An Amazon.com Company
+      p.copy Copyright (c) 2016 Copyright Holder All Rights Reserved.
+
+script(src="bower_components/jquery/dist/jquery.js")
+script(src="bower_components/what-input/dist/what-input.js")
+script(src="bower_components/foundation-sites/dist/js/foundation.js")
+script(src="js/min/app-min.js")
