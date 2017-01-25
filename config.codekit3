@@ -3879,6 +3879,22 @@
 		"oAP": "\/build\/css\/app.css.map",
 		"oF": 0
 		},
+	"\/img\/amazon.png": {
+		"ft": 32768,
+		"iS": 9227,
+		"oA": 0,
+		"oAP": "\/build\/img\/amazon.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/Amazon@2x.png": {
+		"ft": 32768,
+		"iS": 9227,
+		"oA": 0,
+		"oAP": "\/build\/img\/Amazon@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/app-store.png": {
 		"ft": 32768,
 		"iS": 3744,
@@ -3886,6 +3902,14 @@
 		"oAP": "\/build\/img\/app-store.png",
 		"oF": 0,
 		"opt": 1
+		},
+	"\/img\/app-store@2x.png": {
+		"ft": 32768,
+		"iS": 8332,
+		"oA": 0,
+		"oAP": "\/build\/img\/app-store@2x.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/img\/bg-large@2x.jpg": {
 		"ft": 16384,
@@ -3942,6 +3966,14 @@
 		"iS": 4527,
 		"oA": 0,
 		"oAP": "\/build\/img\/google-play.png",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/google-play@2x.png": {
+		"ft": 32768,
+		"iS": 11267,
+		"oA": 0,
+		"oAP": "\/build\/img\/google-play@2x.png",
 		"oF": 0,
 		"opt": 1
 		},
