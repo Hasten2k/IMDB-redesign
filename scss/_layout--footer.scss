@@ -3,54 +3,65 @@
     margin-top: $global-margin;
     padding: $global-padding 0;
   }
+}
+
+.recently-viewed {
+  margin-bottom: $global-margin * 2;
+
+  .cover {
+    @include cover-image;
+    @include breakpoint(medium) {
+      margin-right: $global-margin;
+    }
+  }
 
   .manage-history {
     float: right;
   }
+}
 
-  .apps,
-  .social {
-    a {
-      @include breakpoint(small) {
-        display: block;
-        width: 100%;
-        margin: 0 auto $global-margin * 2;
-      }
-      @include breakpoint(large) {
-        display: inline-block;
-      }
-    }
-
-    img {
+.apps,
+.social {
+  a {
+    @include breakpoint(small) {
       display: block;
+      width: 100%;
+      margin: 0 auto $global-margin * 2;
+    }
+    @include breakpoint(large) {
+      display: inline-block;
+    }
+  }
+
+  img {
+    display: block;
+    margin: auto;
+    width: 140px;
+    @include breakpoint(medium) {
+      margin: initial;
+    }
+  }
+}
+
+.social {
+  a {
+    width: auto;
+    @include breakpoint(large) {
+      margin-right: $global-margin * 2;
+    }
+  }
+
+  img {
+    width: 50px;
+    @include breakpoint(medium) {
       margin: auto;
-      width: 140px;
-      @include breakpoint(medium) {
-        margin: initial;
-      }
     }
   }
+}
 
-  .social {
-    a {
-      width: auto;
-      @include breakpoint(large) {
-        margin-right: $global-margin * 2;
-      }
-    }
-
-    img {
-      width: 50px;
-      @include breakpoint(medium) {
-        margin: auto;
-      }
-    }
-  }
-
-  .site-map {
-    .columns {
-      padding: 0;
-    }
+.site-map {
+  .columns {
+    padding: 0;
   }
 
   li {
@@ -61,13 +72,21 @@
   }
 }
 
-.recently-viewed {
-  margin-bottom: $global-margin;
+.legal {
+  margin-top: $global-margin;
 
-  .cover {
-    @include cover-image;
-    @include breakpoint(medium) {
-      margin-right: $global-margin;
-    }
+  img {
+    float: left;
+    width: 140px;
+  }
+
+  .amazon {
+    float: left;
+
+  }
+
+  .copy {
+    float: right;
+    width: 50%;
   }
 }
