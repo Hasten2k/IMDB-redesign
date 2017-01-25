@@ -3879,6 +3879,14 @@
 		"oAP": "\/build\/css\/app.css.map",
 		"oF": 0
 		},
+	"\/img\/App Store.png": {
+		"ft": 32768,
+		"iS": 3744,
+		"oA": 0,
+		"oAP": "\/build\/img\/App Store.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/img\/bg-large@2x.jpg": {
 		"ft": 16384,
 		"iS": 1423680,
@@ -3928,6 +3936,14 @@
 		"opt": 1,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/Google Play.png": {
+		"ft": 32768,
+		"iS": 4527,
+		"oA": 0,
+		"oAP": "\/build\/img\/Google Play.png",
+		"oF": 0,
+		"opt": 0
 		},
 	"\/img\/guide-to-recognizing-your-saints-poster.jpg": {
 		"ft": 16384,
