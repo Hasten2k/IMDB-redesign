@@ -207,6 +207,26 @@ html
           h4 Follow IMDB
         .small-12.medium-4.columns.show-for-medium
           h4 Site Map
+          .small-6.columns
+            - var siteMapLeft = ["Home", "Top Rated Movies", "Box Office", "In Theatres", "Coming Soon", "TV", "Search", "Site Index", "<hr>", "News", "Message Boards", "Account"] 
+            ul.no-bullet
+              each item in siteMapLeft
+                if item === "<hr>"
+                  li
+                    <hr>
+                else
+                  li
+                    a(href="#")= item
+          .small-6.columns
+            - var siteMapRight = ["Contact Us", "Jobs", "Press Room", "Advertising", "<hr>", "IMDB Pro", "Box Office Mojo", "Withoutabox", "<hr>", "Conditions of Use", "Privacy Policy", "Internet-Based Apps"]
+            ul.no-bullet
+              each item in siteMapRight
+                if item === "<hr>"
+                  li
+                    <hr>
+                else
+                  li
+                    a(href="#")= item
         .small-12.medium-12.columns.show-for-medium
           h4 Legal
 
