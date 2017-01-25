@@ -4137,6 +4137,14 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/pug\/partials\/_user-menu.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/pug\/_user-menu.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
