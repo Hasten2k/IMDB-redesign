@@ -2,15 +2,20 @@
   background-color: $light-gray;
 
   a {
-    color: $dark-gray;
+    color: $black;
     text-decoration: underline;
+    font-size: $global-font-size * .8;
 
     &:hover {
-      color: $black;
+      color: $dark-gray;
     }
   }
 
-  .manage-history {
-    font-size: $global-font-size * .8;
+  li {
+    hr {
+      border-color: $dark-gray;
+    }
   }
+
+  .manage-history {}
 }
