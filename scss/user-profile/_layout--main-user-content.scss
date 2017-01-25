@@ -83,3 +83,27 @@
     }
   }
 }
+
+.user-pager {
+  height: 100%;
+  margin-bottom: $global-margin;
+
+  p {
+    float: left;
+    width: 55%;
+  }
+
+  a {
+    @include breakpoint(small only) {
+      float: right;
+    }
+    display: inline-block;
+    padding-left: $global-padding * 2;
+
+    img {
+      margin: 4px 0 6px $global-margin / 2;
+      display: inline-block;
+      height: 100%;
+    }
+  }
+}

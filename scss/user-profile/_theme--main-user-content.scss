@@ -67,3 +67,20 @@
     }
   }
 }
+
+.user-pager {
+  @include breakpoint(small only) {
+    font-size: 120%;
+  }
+
+  p {
+    width: 55%;
+    @include breakpoint(medium) {
+      text-align: right;
+    }
+  }
+
+  a {
+    color: $black;
+  }
+}
