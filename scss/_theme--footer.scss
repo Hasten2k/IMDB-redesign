@@ -1,3 +1,8 @@
 .footer {
   background-color: $light-gray;
+
+  a {
+    color: $dark-gray;
+    text-decoration: underline;
+  }
 }
