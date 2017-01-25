@@ -16,6 +16,15 @@
       border-color: $dark-gray;
     }
   }
+}
 
-  .manage-history {}
+.legal {
+  p {
+    font-size: $global-font-size * .8;
+    color: $dark-gray;
+  }
+
+  .copy {
+    text-align: right;
+  }
 }
