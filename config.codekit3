@@ -4105,6 +4105,14 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/pug\/_head.pug": {
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_head.html",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/pug\/_mixins.pug": {
 		"cOD": 1,
 		"ft": 512,
