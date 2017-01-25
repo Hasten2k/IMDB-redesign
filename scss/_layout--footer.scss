@@ -8,6 +8,30 @@
     float: right;
   }
 
+  .social {
+    a {
+      @include breakpoint(medium) {
+        display: block;
+        width: 100%;
+        margin-bottom: $global-margin * 2;
+      }
+      @include breakpoint(large) {
+        display: inline-block;
+        width: auto;
+        margin-right: $global-margin * 2;
+        margin-bottom: initial;
+      }
+    }
+
+    img {
+      @include breakpoint(medium) {
+        display: block;
+        width: 50px;
+        margin: auto;
+      }
+    }
+  }
+
   .site-map {
     .columns {
       padding: 0;
