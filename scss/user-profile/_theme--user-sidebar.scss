@@ -1,3 +1,9 @@
+.user-sidebar {
+  @include breakpoint(medium) {
+    border-left: 1px solid $medium-gray;
+  }
+}
+
 .quick-links {
   a {
     color: $black;
