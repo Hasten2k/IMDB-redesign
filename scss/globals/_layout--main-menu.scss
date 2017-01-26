@@ -1,5 +1,34 @@
 .main-menu {
-  background-color: $black;
+  .title-bar-title {
+    img {
+      width: 50%;
+    }
+  }
+
+  .menu-icon {
+    float: right;
+  }
+
+  .top-bar-title {
+    @include breakpoint(small) {
+      margin-bottom: $global-margin;
+      width: 35%;
+    }
+  }
+
+  .top-bar-left {
+    @include breakpoint(small) {
+      width: 100%;
+    }
+
+    input {
+      max-width: none;
+    }
+
+    .button {
+      margin-right: 0;
+    }
+  }
 
   .main-search {
     background-color: transparent;
