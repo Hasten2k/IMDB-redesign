@@ -9,6 +9,10 @@
     float: right;
   }
 
+  &.top-bar {
+    padding: 0;
+  }
+
   .top-bar-title {
     @include breakpoint(small) {
       margin-bottom: $global-margin;
@@ -27,6 +31,12 @@
 
     .button {
       margin-right: 0;
+    }
+
+    li {
+      @include breakpoint(small) {
+        text-align: center;
+      }
     }
   }
 
