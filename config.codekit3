@@ -3927,6 +3927,14 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/bg-small@2x.jpg": {
+		"ft": 16384,
+		"iS": 318892,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-small@2x.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/bg-xlarge@2x.jpg": {
 		"ft": 16384,
 		"iS": 2437720,
