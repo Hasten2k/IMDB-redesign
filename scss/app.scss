@@ -46,7 +46,7 @@
 // @include foundation-flex-classes;
 @include motion-ui-transitions;
 @include motion-ui-animations;
-@import 'variables';
-@import 'mixins';
+@import 'utils/variables';
+@import 'utils/mixins';
 @import 'layout';
 @import 'theme';

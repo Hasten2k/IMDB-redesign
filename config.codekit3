@@ -4213,19 +4213,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/scss\/_layout--footer.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/css\/_layout--footer.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/scss\/_layout.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -4235,19 +4222,6 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/css\/_layout.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
-	"\/scss\/_mixins.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/css\/_mixins.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4265,19 +4239,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/scss\/_theme--footer.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/css\/_theme--footer.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/scss\/_theme.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -4291,19 +4252,6 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/scss\/_variables.scss": {
-		"aP": 1,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
-		"oA": 1,
-		"oAP": "\/build\/css\/_variables.css",
-		"oF": 0,
-		"oS": 3,
-		"uL": 1
-		},
 	"\/scss\/app.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -4313,6 +4261,32 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/build\/css\/app.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/globals\/_layout--footer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_layout--footer.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/globals\/_theme--footer.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_theme--footer.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
@@ -4391,6 +4365,32 @@
 		"ma": 1,
 		"oA": 1,
 		"oAP": "\/build\/css\/_theme--user-sidebar.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/utils\/_mixins.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_mixins.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/scss\/utils\/_variables.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "\/build\/css\/_variables.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
