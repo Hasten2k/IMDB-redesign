@@ -2,7 +2,8 @@ h4,
 h5 {
   font-weight: bold;
 }
+@import 'globals/theme--main-menu';
+@import 'globals/theme--footer';
 @import 'user-profile/theme--page-top';
 @import 'user-profile/theme--main-user-content';
 @import 'user-profile/theme--user-sidebar';
-@import 'globals/theme--footer'
