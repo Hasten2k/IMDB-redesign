@@ -18,8 +18,8 @@
         ul.menu.vertical
           - var mainMenuItems = ["Movies, TV & Showtimes", "Celebs, Events & Photos", "News & Community", "Watchlist (33)"]
           for item in mainMenuItems
-            a(href="#")
-              li= item
+            li
+              a(href="#")= item
 
       .top-bar-right
         p IMDB Pro
