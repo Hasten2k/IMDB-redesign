@@ -1,13 +1,18 @@
-.main-menu.top-bar
+.main-menu.title-bar(data-responsive-toggle="main-menu" data-hide-for="medium")
+  .title-bar-title
+    img(src="img/imdb.svg")
+  button.menu-icon(type="button" data-toggle="main-menu")
+
+
+.main-menu.top-bar#main-menu
   .row
     .small-12.columns
-      .top-bar-title
+      .top-bar-title.show-for-medium
         img(src="img/imdb.svg")
       .top-bar-left
-        ul.menu.main-search
-          li
-            input.input-search(type="search" placeholder="Search")
-          li
-            button.button-search(type="button" class="button small") Search
+        .input-group
+          input.input-group-field.input-search(type="search" placeholder="type to search")
+          .input-group-button
+            input.button(type="submit" value="Search")
       .top-bar-right
         p IMDB Pro
