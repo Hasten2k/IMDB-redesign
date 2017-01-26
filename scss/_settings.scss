@@ -535,7 +535,7 @@ $thumbnail-radius: $global-radius;
 
 $titlebar-background: $black;
 $titlebar-color: $white;
-$titlebar-padding: .5rem;
+$titlebar-padding: $global-padding 0;
 $titlebar-text-font-weight: bold;
 $titlebar-icon-color: $white;
 $titlebar-icon-color-hover: $medium-gray;
