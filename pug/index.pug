@@ -6,10 +6,20 @@ html
   include partials/_head
 
   body
-    .main-menu
+    .main-menu.top-bar
       .row
-        .small-12.columns
-          img(src="img/imdb.svg")
+        .small-3.large-3.columns
+          .top-bar-title
+            img(src="img/imdb.svg")
+        .small-6.large-6.columns
+          .top-bar-left
+            ul.menu.main-search
+              li
+                input.input-search(type="search" placeholder="Search")
+              li
+                button.button-search(type="button" class="button small") Search
+        .small-3.large-3.columns
+          .top-bar-right
 
     .cover-photo
       .overlay
