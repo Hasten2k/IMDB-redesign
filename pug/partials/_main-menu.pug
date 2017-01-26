@@ -14,5 +14,12 @@
           input.input-group-field.input-search(type="search" placeholder="type to search")
           .input-group-button
             input.button(type="submit" value="Search")
+
+        ul.menu.vertical
+          - var mainMenuItems = ["Movies, TV & Showtimes", "Celebs, Events & Photos", "News & Community", "Watchlist (33)"]
+          for item in mainMenuItems
+            a(href="#")
+              li= item
+
       .top-bar-right
         p IMDB Pro
