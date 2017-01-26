@@ -24,11 +24,27 @@
   }
 
   .top-bar-left {
+    @include breakpoint(large) {
+      width: 80%;
+    }
+
+    img {
+      @include breakpoint(large) {
+        float: left;
+        margin: $global-margin ($global-margin * 4) $global-margin 0;
+      }
+    }
+
     .input-group {
       margin: $global-margin 0;
       @include breakpoint(medium) {
         width: 65%;
         margin: 0 auto;
+      }
+      @include breakpoint(large) {
+        float: left;
+        width: 50%;
+        margin-bottom: $global-margin;
       }
     }
 
@@ -42,6 +58,15 @@
 
     ul {
       margin: $global-margin 0;
+      @include breakpoint(large) {
+        margin: 0;
+      }
+    }
+
+    a {
+      @include breakpoint(large) {
+        padding: 0 ($global-padding * 2) 0 0;
+      }
     }
   }
 
@@ -51,14 +76,25 @@
       float: none;
       width: auto;
     }
+    @include breakpoint(large) {
+      float: right;
+      // width: 20%;
+    }
 
     a {
       display: block;
       float: left;
       padding: ($global-padding / 2) 0;
       width: 50%;
-      @include breakpoint(medium) {
-        // margin: 0 $global-margin;
+      @include breakpoint(large) {
+        width: auto;
+        float: none;
+      }
+
+      &:first-child {
+        @include breakpoint(large) {
+          // margin-bottom: $global-margin;
+        }
       }
     }
   }
