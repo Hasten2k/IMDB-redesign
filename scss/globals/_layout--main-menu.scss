@@ -54,16 +54,6 @@
       float: left;
       padding: ($global-padding / 2) 0;
       width: 50%;
-      text-align: center;
-      border-bottom: 2px solid $black;
-
-      &.active {
-        border-bottom-color: $primary-color;
-      }
     }
-  }
-
-  .main-search {
-    background-color: transparent;
   }
 }
