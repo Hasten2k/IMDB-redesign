@@ -1,14 +1,14 @@
 .cover-photo {
-  background-image: url('../img/bg-medium@2x.jpg');
+  background-image: url('../img/bg-small.jpg');
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
   @include breakpoint(medium) {
-    background-image: url('../img/bg-large@2x.jpg');
+    background-image: url('../img/bg-medium.jpg');
     background-position: left;
   }
   @include breakpoint(large) {
-    background-image: url('../img/bg-xlarge@2x.jpg');
+    background-image: url('../img/bg-large.jpg');
   }
 
   .overlay {

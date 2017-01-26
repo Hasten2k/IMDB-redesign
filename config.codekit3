@@ -3911,11 +3911,27 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/bg-large.jpg": {
+		"ft": 16384,
+		"iS": 404537,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-large.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/bg-large@2x.jpg": {
 		"ft": 16384,
 		"iS": 1423680,
 		"oA": 0,
 		"oAP": "\/build\/img\/bg-large@2x.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/bg-medium.jpg": {
+		"ft": 16384,
+		"iS": 241785,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-medium.jpg",
 		"oF": 0,
 		"opt": 1
 		},
@@ -3927,11 +3943,27 @@
 		"oF": 0,
 		"opt": 1
 		},
+	"\/img\/bg-small.jpg": {
+		"ft": 16384,
+		"iS": 86922,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-small.jpg",
+		"oF": 0,
+		"opt": 1
+		},
 	"\/img\/bg-small@2x.jpg": {
 		"ft": 16384,
 		"iS": 318892,
 		"oA": 0,
 		"oAP": "\/build\/img\/bg-small@2x.jpg",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/img\/bg-xlarge.jpg": {
+		"ft": 16384,
+		"iS": 679387,
+		"oA": 0,
+		"oAP": "\/build\/img\/bg-xlarge.jpg",
 		"oF": 0,
 		"opt": 1
 		},
