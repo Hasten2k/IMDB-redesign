@@ -79,8 +79,9 @@
   }
 }
 
-.title-bar {
-  &.user-menu-bar {
+// TODO: Need to modify this to be compatible with main-menu
+.user-menu-bar {
+  &.title-bar {
     background-color: transparent;
     color: $black;
     border: 1px solid $medium-gray;
