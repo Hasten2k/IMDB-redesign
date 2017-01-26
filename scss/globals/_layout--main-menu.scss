@@ -10,7 +10,7 @@
   }
 
   &.top-bar {
-    padding: 0;
+    padding: 0 0 $global-padding;
   }
 
   .top-bar-title {
@@ -25,6 +25,10 @@
       width: 100%;
     }
 
+    .input-group {
+      margin: $global-margin 0;
+    }
+
     input {
       max-width: none;
     }
@@ -33,9 +37,28 @@
       margin-right: 0;
     }
 
+    ul {
+      margin: $global-margin 0;
+    }
+
     li {
       @include breakpoint(small) {
         text-align: center;
+      }
+    }
+  }
+
+  .top-bar-right {
+    a {
+      display: block;
+      float: left;
+      padding: ($global-padding / 2) 0;
+      width: 50%;
+      text-align: center;
+      border-bottom: 2px solid $black;
+
+      &.active {
+        border-bottom-color: $primary-color;
       }
     }
   }
