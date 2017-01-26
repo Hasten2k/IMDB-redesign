@@ -11,6 +11,9 @@
 
   &.top-bar {
     padding: 0 0 $global-padding;
+    @include breakpoint(large) {
+      padding: $global-padding 0;
+    }
   }
 
   .top-bar-title {
@@ -21,12 +24,12 @@
   }
 
   .top-bar-left {
-    @include breakpoint(small) {
-      width: 100%;
-    }
-
     .input-group {
       margin: $global-margin 0;
+      @include breakpoint(medium) {
+        width: 65%;
+        margin: 0 auto;
+      }
     }
 
     input {
@@ -40,20 +43,23 @@
     ul {
       margin: $global-margin 0;
     }
-
-    li {
-      @include breakpoint(small) {
-        text-align: center;
-      }
-    }
   }
 
   .top-bar-right {
+    @include breakpoint(medium) {
+      margin: 0 auto;
+      float: none;
+      width: auto;
+    }
+
     a {
       display: block;
       float: left;
       padding: ($global-padding / 2) 0;
       width: 50%;
+      @include breakpoint(medium) {
+        // margin: 0 $global-margin;
+      }
     }
   }
 }

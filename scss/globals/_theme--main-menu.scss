@@ -10,6 +10,15 @@
     }
   }
 
+  li {
+    @include breakpoint(small) {
+      text-align: center;
+    }
+    @include breakpoint(large) {
+      text-align: left;
+    }
+  }
+
   .main-search {
     background-color: transparent;
   }
