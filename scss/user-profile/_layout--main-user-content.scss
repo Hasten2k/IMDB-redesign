@@ -67,6 +67,14 @@
   .cast-and-crew {
     margin-bottom: $global-margin;
 
+    .columns {
+      &:last-child {
+        @include breakpoint(medium) {
+          padding-bottom: $global-padding;
+        }
+      }
+    }
+
     p {
       margin-bottom: 0;
     }
