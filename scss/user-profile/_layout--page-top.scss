@@ -59,10 +59,19 @@
 }
 
 .top-statistics {
-  margin-bottom: $global-margin * 2;
+  margin-bottom: $global-margin * 3;
 
   .number {
     margin: $global-margin 0 0;
+  }
+}
+
+.user-menu-bar {
+  padding: ($global-padding / 2) $global-padding;
+
+  button {
+    float: right;
+    margin: 5px .5rem;
   }
 }
 
