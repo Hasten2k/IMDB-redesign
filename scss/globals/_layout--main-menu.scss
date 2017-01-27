@@ -1,4 +1,11 @@
 .main-menu {
+  &.title-bar {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
   .title-bar-title {
     img {
       width: 50%;
@@ -10,8 +17,13 @@
   }
 
   &.top-bar {
+    position: fixed;
+    top: $global-margin * 2 + rem-calc(30px);
+    z-index: 1000;
+    width: 100%;
     padding: 0 0 $global-padding;
     @include breakpoint(large) {
+      top: 0;
       padding: $global-padding 0;
     }
   }

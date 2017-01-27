@@ -1,12 +1,13 @@
 .cover-photo {
   position: relative;
-
   height: 200px;
+  margin-top: $global-margin * 2 + rem-calc(30px);
   @include breakpoint(medium) {
     height: 350px;
   }
   @include breakpoint(large) {
     height: 500px;
+    margin-top: $global-margin * 2 + rem-calc(92px);
   }
 
   .overlay {
