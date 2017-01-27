@@ -41,7 +41,7 @@ html
 
     .row
       //- User main content
-      .small-12.medium-9.columns.main-user-content
+      .small-12.large-9.columns.main-user-content
         +movie-card("breaking-bad.jpg", '1. Breaking Bad', '2008 TV Series', 10, "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine, with his former student, in order to secure his family's financial future.", "Vince Gilligan", ["Bryan Cranston", "Aaron Paul", "Anna Gunn", "Betsy Brandt"])
 
         +movie-card("interstellar-poster.jpg", '2. Interstellar', '2014', 9, "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.", "Christopher Nolan", ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"])
@@ -61,10 +61,10 @@ html
               img(src="img/next-arrow.svg")
 
       //- User Sidebar
-      .small-12.medium-3.columns.user-sidebar
+      .small-12.large-3.columns.user-sidebar
         .small-12.columns.quick-links
           h4 Quick Links
-          ul.no-bullet
+          ul.vertical.medium-horizontal.large-vertical.menu.quick-links-menu
             - var links = ["Check Ins", "Boards Profile", "Recently Viewed", "About This Page", "Export This List"]
             each link in links
               li
@@ -72,8 +72,8 @@ html
 
         .small-12.columns.rating-statistics
           h4 Rating Statistics
-          .row.collapse
-            .small-12.columns
+          .row.medium-uncollapse
+            .small-12.medium-6.large-12.columns
               h5 Rating Distribution
               .distribution-container
                 +rating-column(1, 2)
@@ -87,7 +87,7 @@ html
                 +rating-column(9, 17)
                 +rating-column(10, 2)
 
-            .small-12.columns
+            .small-12.medium-6.large-12.columns
               h5 Number of Ratings per Year
               .ratings-by-year
                 .year-container
@@ -106,7 +106,7 @@ html
                 p.end-year 2016
 
 
-            .small-12.columns
+            .small-12.medium-6.large-12.columns
               h5 Top 20 Genres
               .top-20.genres
                 .headings.clearfix
@@ -135,7 +135,7 @@ html
                 +ratings-bar(362, 283, 'Action', '5.73')
                 +ratings-bar(362, 32, 'Horror', '5.47')
 
-            .small-12.columns
+            .small-12.medium-6.large-12.columns
               h5 Top 20 Years
               .top-20.years
                 .headings.clearfix
