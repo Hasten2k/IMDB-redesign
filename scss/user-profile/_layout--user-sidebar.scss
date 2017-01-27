@@ -9,6 +9,15 @@
     width: 50%;
     margin: 0;
     float: left;
+    @include breakpoint(medium) {
+      width: auto;
+      float: none;
+      padding-left: 0;
+    }
+    @include breakpoint(large) {
+      width: 100%;
+      padding-top: 0;
+    }
   }
 }
 
